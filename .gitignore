@@ -1,2 +1,5 @@
 /data/
 /test_output/
+*.zip
+*.ZIP
+

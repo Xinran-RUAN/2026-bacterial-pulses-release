@@ -4,12 +4,18 @@
 Canan Akkoyunlu, Jose A. Carrillo, Gissell Estrada-Rodriguez, and Xinran Ruan.  
 [Preprint, arXiv:2611.11764v1](https://arxiv.org/html/2611.11764v1)
 
+## Code and data
+
+- MATLAB code: [GitHub repository](https://github.com/Xinran-RUAN/2026-bacterial-pulses-release)
+- Simulation data: [Zenodo, DOI: 10.5281/zenodo.24129973](https://doi.org/10.5281/zenodo.24129973)
+
 ## Setup
 
 Use MATLAB R2023a (tested with 9.14.0.2206163). No additional toolbox is
-required. Keep `code/` and `data/` alongside this README. Place the MAT
-files in the `data/figureNN/` folders listed below, with the shared
-`baseline.mat` in `data/figure01/`.
+required. Download the code from GitHub and `data.zip` from Zenodo.
+Extract the archive so that `data/` is alongside `code/` and this README.
+Place the MAT files in the `data/figureNN/` folders listed below, with the
+shared `baseline.mat` in `data/figure01/`.
 
 Before running any commands below, set the MATLAB Current Folder to
 `2026-bacterial-pulses-release`, which contains `code/`, `data/`, and
