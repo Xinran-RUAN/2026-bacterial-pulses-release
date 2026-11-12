@@ -6,20 +6,22 @@ Canan Akkoyunlu, Jose A. Carrillo, Gissell Estrada-Rodriguez, and Xinran Ruan.
 
 ## Code and data
 
-- MATLAB code: [GitHub repository](https://github.com/Xinran-RUAN/2026-bacterial-pulses-release)
-- Simulation data: [Zenodo, DOI: 10.5281/zenodo.24129973](https://doi.org/10.5281/zenodo.24129973)
+The MATLAB code and simulation data are available in the
+[GitHub repository](https://github.com/Xinran-RUAN/2026-bacterial-pulses-release).
+The `code/` folder contains the simulation and plotting scripts, and
+`data/` contains the saved data organised by figure as listed below.
 
 ## Setup
 
 Use MATLAB R2023a (tested with 9.14.0.2206163). No additional toolbox is
-required. Download the code from GitHub and `data.zip` from Zenodo.
-Extract the archive so that `data/` is alongside `code/` and this README.
-Place the MAT files in the `data/figureNN/` folders listed below, with the
-shared `baseline.mat` in `data/figure01/`.
+required. Download or clone the repository from GitHub. If using
+**Code > Download ZIP**, extract the downloaded archive. Keep `code/`,
+`data/`, and this README together in the repository root, preserving
+the subfolders and file names. No separate data download is needed.
 
 Before running any commands below, set the MATLAB Current Folder to
-`2026-bacterial-pulses-release`, which contains `code/`, `data/`, and
-this README.
+the repository root, the folder containing `code/`, `data/`, and this
+README.
 
 ## Redraw from saved data
 
@@ -113,6 +115,7 @@ selects the newly computed data for Figures 1 and 3–7 and Table 1.
   The `a=0.0005` and `0.0001` cases use complete time-50 checkpoint
   files. `read_completed_case` reads both layouts.
 - The Figure 2 v7 MAT stores `macro_x` (21 × 21 × 100) and `kinetic_x`
-  (21 × 21 × 60). Dimensions are `chiS`, `chiN`, and time, with unit-time
-  samples in `macro_t` and `kinetic_t`. Panels (b) and (c) average the
-  final 10 and 6 unit-time centroid differences, respectively.
+  (21 × 21 × 60). Dimensions are `chiS`, `chiN`, and time. Both parameter
+  grids are `0:0.1:2`, with `macro_t=1:100` and `kinetic_t=1:60`.
+  Panels (b) and (c) average the final 10 and 6 unit-time centroid
+  differences, respectively, over `[90,100]` and `[54,60]`.
